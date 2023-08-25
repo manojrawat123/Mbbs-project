@@ -1,0 +1,45 @@
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .slider-dots li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d8d8d8;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slider-dots li.slick-active {
+    background-color: #09a7f7;
+  }
+  
+  ul.slick-dots li button:before
+  {
+    font-size: 13px;
+  }
+  
+  ul.slick-dots li.slick-active button:before
+  {
+    color:#0EA5E9;
+  }
+  ul.slick-dots
+  {
+    bottom: -47px;
+  }
+
+  .slides
+  {
+    width: 75% !important;
+    display: block !important;
+  }
+  @media screen and (max-width:768px) {
+    .slides
+  {
+    width: 100% !important;
+  }
+  }
